@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Products from "./pages/Products/Products";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import BackgroundIMG from "./components/BackgroundIMG";
+import Maincomponents from "./components/Maincomponents";
+import Home from "./pages/Home/Home";
 // import Cart from "./pages/Cart/Cart"
 function App() {
   return (
@@ -12,7 +15,9 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" />
+            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/BackgroundIMG" element={<BackgroundIMG />} />
             <Route path="/Products" element={<Products />} />
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />

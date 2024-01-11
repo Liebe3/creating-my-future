@@ -1,0 +1,177 @@
+.products{
+  text-align: center;
+  margin-bottom: 9.375rem;
+  letter-spacing: 10px;
+  background-color: #B85C38;
+  color: #FFF3E4;
+}
+
+main{
+  height: 100%;
+  background-color: #FFF3E4;
+}
+
+.product-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.coffee-img, .coffee-img1{
+  height: 330px;
+  width: 340px;
+  object-fit: contain;
+  position: absolute;
+  top: -9.375rem;
+}
+
+.coffee-img1{
+  width: 340px;
+}
+
+.class{
+  padding: 20px;
+  color: #FFF3E4;
+}
+
+.coffee-name{
+  margin: 6.5rem 0rem 0rem 0rem;
+  font-size: 1.563rem;
+  text-transform: uppercase;
+  color: #FFF3E4;
+}
+
+.coffee{
+  height: 500px;
+  width: 30%;
+  background: #B85C38;
+  color: rgb(43, 38, 38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 10px 0 10px;
+  /* opacity: 1; */
+  /* transition: all 1.5s;
+  filter:blur(7px);
+  transform: scale(.5, .5); */
+}
+
+/* .coffee-show{
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1, 1);
+} */
+
+.buy-btn{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Product media query for xl divice start */
+
+@media screen and (max-width:1100px) {
+  main{
+    height: 100%;
+    }
+
+  .coffee-img, .coffee-img1{
+    height: 60%;
+    width: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: -9.375rem;
+  }
+
+  .coffee-img1{
+    width: 90%;
+  }
+
+  .coffee{
+    margin: 0 10px 0 10px;
+    height: 500px;
+    width: 400px;
+  }
+
+  .class{
+    padding: 20px;
+    
+  }
+      
+  .coffee-name{
+    margin: 6.5rem 0rem 0rem 0rem;
+    font-size: 1.563rem;
+    text-transform: uppercase;
+  }
+}   
+
+
+@media screen and (max-width:795px) {
+  main{
+    height: 100%;
+  }
+
+  .products{
+    margin-bottom: 12.375rem;
+  }
+
+  .product-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 200px;
+  }
+
+  .buy-btn{
+    margin: 40px 0 40px 0;
+  }
+
+  .coffee-img, .coffee-img1{
+    height: 60%;
+    width: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: -9.375rem;
+  }
+
+  .coffee-img1{
+    width: 90%;
+  }
+
+  .coffee-name{
+    margin: 130px 0 0px 0;
+  }
+
+  .coffee{
+    height: 100%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .product-container{
+    row-gap: 100px;
+  }
+
+  .products{
+    margin-bottom: 5.375rem;
+  }
+
+}
+
+@media screen and (max-width:380px) {
+  .coffee-name{
+    font-size: 1.20rem;
+  }
+
+  .class{
+    font-size: .95rem;
+  }
+
+  .product-container{
+    row-gap: 50px;
+  }
+}
