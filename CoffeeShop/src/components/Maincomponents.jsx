@@ -3,6 +3,7 @@ import coffee1 from "../assets/homeImage/coffee1-transformed.jpeg";
 import coffee2 from "../assets/homeImage/coffee2-transformed.jpeg";
 import coffee3 from "../assets/homeImage/coffee4-transformed.jpeg";
 import style from "./maincomponents.module.css";
+import { Link } from "react-router-dom";
 
 const Maincomponents = () => {
   return (
@@ -24,9 +25,9 @@ const Maincomponents = () => {
               adipisci ea saepe animi.
             </p>
           </div>
-          <a href="./products.html">
+          <Link to="/Products">
             <button className={style["buy-btn"]}>Buy Now</button>
-          </a>
+          </Link>
         </div>
         <div className={style.coffee}>
           <img
@@ -43,9 +44,9 @@ const Maincomponents = () => {
               adipisci ea saepe animi.
             </p>
           </div>
-          <a href="./products.html">
+          <Link to="/Products">
             <button className={style["buy-btn"]}>Buy Now</button>
-          </a>
+          </Link>
         </div>
         <div className={style.coffee}>
           <img
@@ -62,9 +63,9 @@ const Maincomponents = () => {
               adipisci ea saepe animi.
             </p>
           </div>
-          <a href="./products.html">
+          <Link to="/Products">
             <button className={style["buy-btn"]}>Buy Now</button>
-          </a>
+          </Link>
         </div>
       </div>
     </main>

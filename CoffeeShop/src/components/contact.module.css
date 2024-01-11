@@ -1,0 +1,149 @@
+.contact-container{
+  height: 100%;
+  position: relative;
+  background: #FFF3E4;
+  z-index: 1;
+}
+
+.contact-form-container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  place-items: center;
+}
+
+.contact-img{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* transition: all 1.5s;
+  opacity: 1;
+  transform: scale(0,.2); */
+  filter: drop-shadow(40px 32px 32px rgba(0,0,0,.8));
+}
+
+/* .contact-img-show{
+  opacity: 1;
+  transform: scale(1,1); 
+} */
+
+.contact-coffee-img{
+  height: 100%;
+  width: 100%;
+  margin-right: 180px;
+  animation: coffee 3s infinite ease;
+}
+
+.contact-form{
+  height: 100%;
+  width: 100%; 
+  /* opacity: 0;
+  transition: all 1.5s;
+  transform: translate(-100%); */
+  padding-bottom: 50px;
+}
+
+/* .contact-form-show{
+  opacity: 1;
+  transform: translate(0);
+} */
+
+.contact-message{
+  width: 100%;
+  height: 90%;
+  margin-top: 40px;
+  margin-left: 70px;
+  
+}
+
+.email-label, .message-label{
+  font-size: 25px;
+  font-weight: bold;
+  color: #483434;
+}
+
+#fillout{
+  border: 1px solid black;
+}
+
+.email-input, .message-input{
+  width: 400px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.email-input{
+  width: 71%;
+  padding: 20px;
+  border-color: #5c4032;
+  outline-color: #5c4032;
+}
+
+.message-input{
+  height: 58%;
+  width: 71%;
+  padding: 20px 20px;
+  border-color: #5c4032;
+  outline-color: #5c4032;
+}
+
+.submit-button{
+  width: 71%;
+  height: 10%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:800px){
+  .contact-form-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-img,
+  .contact-coffee-img{
+    display: none;
+  }
+  
+  .contact-message{
+    width: 100%;
+    height: 100%;
+    margin: 80px 0 0 0;
+  }
+  
+  .submit-button{
+    width: 71%;
+    padding: 20px;
+  }
+
+  .contact-form{
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact-message{
+    text-align: center;
+  }
+  
+  .email-label, .message-label{
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .email-label, .message-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+}
