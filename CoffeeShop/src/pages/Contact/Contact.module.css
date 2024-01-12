@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+form{
+    display: block;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 2px #ddd;
+    margin: 40px auto;
+    max-width: 600px;
+    max-height: 700px;
+    padding: 20px;
+}
+
+form input, textarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px auto;
+    padding: 8px;
+    font-family: "Poppins";
+    background-color: #f3f3f3;
+    border: 1px solid;
+}
+
+form span{
+    color: #F4D9BF;
+}
+
+form button{
+    height: 45px;
+    width: 560px;
+    border: none;
+    background-color: #f08c2f;
+    color: #fff;
+    cursor: pointer;
+}
