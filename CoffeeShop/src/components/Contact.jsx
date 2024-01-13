@@ -1,52 +1,34 @@
-import React from "react";
-import style from "./contact.module.css";
-import contactImg from "../assets/homeImage/cupu-transformed-removebg-preview.png";
+import React from 'react'
+import style from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <div className={style["contact-container"]}>
-      <div className={style["contact-form-container"]}>
-        <div className={style["contact-form"]}>
-          <form
-            className={style["contact-message"]}
-            action="https://formspree.io/f/mnqykezk"
-            method="POST"
-          >
-            <label className={style["email-label"]}>Email</label>
-            <br />
-            <input
-              className={style["email-input"]}
-              id="email"
-              name="email"
-              type="email"
-              placeholder="abc@gmail"
-              required
-            />
-            <br />
-            <label className={style["message-label"]}>Message</label>
-            <br />
-            <textarea
-              id="message-input"
-              className={style["message-input"]}
-              rows="6"
-              placeholder="message"
-              required
-            ></textarea>
-            <button id="submit-button" className={style["submit-button"]}>
+    <div className={style.contact}>
+      <h3>Contact <span>Us</span></h3>
+      <form action="">
+        <div className={style.info}>
+          <label className="FullName" htmlFor=""></label>
+          <input placeholder="John Wick" required type="text"/>
+        </div>
+        <div className={style.info}>
+        <label className="Email" htmlFor=""></label>
+          <input placeholder="john@gmail.com"  required type="text"/>
+        </div>
+        <div className={style.info}>
+        <label className="Phone" htmlFor=""></label>
+          <input placeholder="+639..."  required type="text"/>
+        </div>
+        <div className={style.message}>
+        <label className="Message" htmlFor=""></label>
+          <textarea rows='4' placeholder="Type your message here..." required type="text"/>
+        </div>
+        <button id="submit-button" className={style["submit-button"]}>
               Submit
             </button>
-          </form>
-        </div>
-        <div className={style["contact-img"]}>
-          <img
-            className={style["contact-coffee-img"]}
-            src={contactImg}
-            alt="contact-image"
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
+      </form>
 
-export default Contact;
+    </div>
+  )
+}
+
+export default Contact
