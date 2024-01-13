@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-form{
+.contact{
     display: block;
     background-color: #fff;
     box-shadow: 1px 1px 3px 2px #ddd;
@@ -12,26 +12,39 @@ form{
     padding: 20px;
 }
 
-form input, textarea{
+.info{
+    padding: 2.5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.message{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 10px auto;
-    padding: 8px;
     font-family: "Poppins";
     background-color: #f3f3f3;
-    border: 1px solid;
+
 }
 
-form span{
-    color: #F4D9BF;
+h3{
+    color: #ff7b00;
 }
 
-form button{
-    height: 45px;
-    width: 560px;
+h3 span{
+    color: #000000;
+}
+
+.submit-button{
+    height: 30px;
+    width: 80px;
+    align-items: center;
     border: none;
-    background-color: #f08c2f;
-    color: #fff;
+    background-color: #ff7b00;
+    color: #000000;
     cursor: pointer;
 }
