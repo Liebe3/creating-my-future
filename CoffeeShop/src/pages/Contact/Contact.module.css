@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
+    background: url(../assets/homeImage/overhead-view-coffee-latte-with-lavender-flower-wooden-table.jpg);
 }
+
+
 
 .contact{
     display: block;
