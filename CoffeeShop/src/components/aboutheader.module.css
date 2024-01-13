@@ -1,0 +1,16 @@
+.about-div{
+  text-align: center;
+  background-color: #FFF3E4;
+  color: #FFF3E4;
+  letter-spacing: 10px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-div h1{ 
+  text-align: center;
+  background-color: #B85C38;
+  width: 100%;
+}
