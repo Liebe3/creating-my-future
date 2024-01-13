@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Glide from 'react-glidejs';
-import './Products.css'; 
+import './Products.module.css'; 
 
 const Products = () => {
   useEffect(() => {
