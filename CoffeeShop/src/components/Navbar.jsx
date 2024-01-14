@@ -43,12 +43,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className={style["fa-cart-shopping-container"]}>
-          <Link to="/Cart">
-            <IoCartOutline className={style["fa-cart-shopping"]} size={45} />
+          <Link to="/Cart" className={style["your-link-class"]} >
+            <IoCartOutline className={style["fa-cart-shopping"]} size={40} />
           </Link>
-          <a>
-            <div className={style["add-to-cart"]}>0</div>
-          </a>
+          <div className={style["add-to-cart"]}>0</div>
         </div>
       </div>
     </nav>
