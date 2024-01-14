@@ -122,7 +122,7 @@ input {
   color: white;
 }
 
-.fa-cart-shopping-container a {
+.fa-cart-shopping-container Link {
   width: 0;
   display: flex;
   justify-content: center;

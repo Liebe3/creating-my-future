@@ -6,6 +6,7 @@ import Contact from "./pages/Contact/Contact";
 import BackgroundIMG from "./components/BackgroundIMG";
 import Maincomponents from "./components/Maincomponents";
 import Home from "./pages/Home/Home";
+import Cart from "./pages/Cart/Cart"
 // import Cart from "./pages/Cart/Cart"
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/Products" element={<Products />} />
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/Cart" element={<Cart/>}/>
           </Routes>
         </Router>
       </div>
