@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./contact.module.css";
+import style from "./Contact.module.css";
 import contactImg from "../assets/homeImage/cupu-transformed-removebg-preview.png";
 
 const Contact = () => {
@@ -26,25 +26,25 @@ const Contact = () => {
             <label className={style["message-label"]}>Message</label>
             <br />
             <textarea
-              id="message-input"
               className={style["message-input"]}
+              id="message-input"
               rows="6"
               placeholder="message"
               required
             ></textarea>
-            <button id="submit-button" className={style["submit-button"]}>
+            <button className={style["submit-button"]} id="submit-button">
               Submit
             </button>
           </form>
-    </div>
-    <div className={style["contact-img"]}>
+        </div>
+        <div className={style["contact-img"]}>
           <img
             className={style["contact-coffee-img"]}
             src={contactImg}
-            alt="contact-image"
+            alt=""
           />
-    </div>
-    </div>
+        </div>
+      </div>
     </div>
   );
 };
