@@ -14,3 +14,14 @@ const Menu = () => {
           Our Menu
         </h1>
   
+        <div className=" flex flex-wrap pb-8 gap-8 justify-center">
+        {/* <MenuCard img={img1} title="Espresso" />
+        <MenuCard img={img2} title="Frappucino" />
+        <MenuCard img={img3} title="Americano" />
+        <MenuCard img={img4} title="Macchiato" />
+        <MenuCard img={img5} title="Latte" />
+        <MenuCard img={img6} title="Caramel" /> */}
+      </div>
+    </div>
+  );
+};
