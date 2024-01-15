@@ -29,15 +29,15 @@ const Contact = () => {
           </div>
           <label>Subject:</label>
           <div className={style["subject"]}>
-          <input type="text" name="subject" id="" placeholder='Subject'/>
-          <textarea placeholder="Message"> </textarea>
+          <input type="text" name="subject" id="" placeholder='Subject'/></div>
+          <div className={style["message"]}>
+          <textarea placeholder="Message" value required></textarea></div>
           <button>Send Message</button>
-          </div>
+          
       </form>
     </div>
-  </div>
-
-
+    </div>
+    
 );
 };
 
