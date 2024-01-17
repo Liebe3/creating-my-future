@@ -8,6 +8,17 @@
 
 }
 
+h1{
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  font-size: 22px;
+  background: #FFF3E4;
+  color: #483434;
+}
+
 .Contact1{
   height: 80vh;
   width: 100%;
@@ -16,7 +27,7 @@
   background: #FFF3E4;
 }
 
-.contact-left{
+.contact-left1{
   height: 100%;
   width: 100%;
   display: flex;
@@ -24,7 +35,7 @@
   align-items: center;
 }
 
-.bottom-left{
+.bottom-left1{
   height: 80%;
   width: 100%;
   display: flex;
@@ -32,14 +43,14 @@
   object-fit: cover;
 }
 
-.bottom-left img {
+.bottom-left1 img {
   height: 100%;
   width: 100%;
   margin-top: 30px;
   object-fit: contain;
 }
 
-.contact-right{
+.contact-right1{
   height: 100%;
   width: 100%;
   display: flex;
@@ -47,33 +58,33 @@
   align-items: center;
 }
 
-.form h2{
+.form1 h2{
   margin: 15px 0 10px 0;
   color: #483434;
 }
 
-.form{
+.form1{
   max-width: 500px;
   height: 60%;
   margin-left: 50px;
 }
 
-.name-fields{
+.name-fields1{
   display: flex;
   width: 100%;
 }
 
-.name-fields input{
+.name-fields1 input{
   width: 100%;
   height: 40px;
   padding: 10px;
 }
 
-.name{
+.name1{
   margin-right: 10px;
 }
 
-.subject{
+.subject1{
   width: 100%;
   padding: 10px;
 }
@@ -105,11 +116,11 @@ button{
 }
 
 @media screen and (max-width:820px) {
-  .contact-left{
+  .contact-left1{
     display: none;
   }
 
-  .contact-right{
+  .contact-right1{
     height: 100%;
     width: 100%;
     display: flex;
@@ -118,14 +129,14 @@ button{
     margin: 0 20px;
   }
 
-  .form{
+  .form1{
     max-width: 400px;
     height: 60%;
     margin-left: 0;
   }
   
-  .name-fields,
-  .subject,
+  .name-fields1,
+  .subject1,
   textarea{
     width: 100%;
   }
@@ -135,11 +146,63 @@ button{
     text-align: center;
   }
   
-  .contact-right{
+  .contact-right1{
     display: flex;
     justify-content: center;
     align-items: start;
     padding-top: 20px;
   }
+}
 
+.footer-lower1{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer-lower1 p{
+  font-size: 12px;
+}
+
+.icons1{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons1 a{
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  margin-top: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #483434;
+}
+
+.ownership1{
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 5px 5px;
+  font-size: 13px;
+}
+
+@media screen and (max-width:300px) {
+  marquee{
+    border: 1px solid black;
+    margin: 0 50px;
+    margin-top: 50px;
+  }
 }
