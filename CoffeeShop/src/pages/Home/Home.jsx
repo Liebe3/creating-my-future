@@ -1,11 +1,11 @@
 import React from "react";
-import Maincomponents from "../../components/Maincomponents";
-import BackgroundIMG from "../../components/BackgroundIMG";
+import Maincomponents from "../../components/homeComponents/Maincomponents";
+import BackgroundIMG from "../../components/homeComponents/BackgroundIMG";
 import style from "./home.module.css";
-import Aboutheader from "../../components/Aboutheader";
-import Section from "../../components/Section";
-import Contact from "../../components/Contact";
-import Footer from "../../components/Footer";
+import Aboutheader from "../../components/homeComponents/Aboutheader";
+import Section from "../../components/homeComponents/Section";
+import Contact from "../../components/homeComponents/Contact";
+import Footer from "../../components/homeComponents/Footer";
 const Home = () => {
   const Contactstyle = {
     textAlign: "center",
@@ -24,7 +24,7 @@ const Home = () => {
       <Section />
       <h1 style={Contactstyle}>Contact</h1>
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
