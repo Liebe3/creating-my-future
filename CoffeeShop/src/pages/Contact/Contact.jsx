@@ -11,7 +11,9 @@ import { MdOutlineEmail } from "react-icons/md";
 const Contact = () => {
   return (
     <main>
+      <section>
       <h1>Get in touch with us today!</h1>
+      </section>
     <div className={style["Contact1"]}>
       <div className={style["contact-left1"]}>
         <div className={style["bottom-left1"]}>
