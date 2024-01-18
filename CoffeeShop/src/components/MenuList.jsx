@@ -1,4 +1,5 @@
 import React from 'react' 
+Import {FaShoppingCart} from 'react-icons/fa-shopping-cart'
 
 const MenuList = (props) => {
     return (
@@ -15,8 +16,11 @@ const MenuList = (props) => {
                 <div>
                     <div>
                         <button>Cold</button>
-                        <button>Cold</button>
+                        <button>Hot</button>
                     </div>
+                <span>
+                    <FaShoppingCart size={20}/>
+                </span>
                 
                 
                 

@@ -5,7 +5,7 @@ import React from "react";
 // import img4 from "../assets/img/menu4.jpg";
 // import img5 from "../assets/img/menu5.jpg";
 // import img6 from "../assets/img/menu6.jpg";
-// import MenuCard from "../layouts/MenuCard";
+import MenuList from "../components/MenuList";
 
 const Menu = () => {
     return (
