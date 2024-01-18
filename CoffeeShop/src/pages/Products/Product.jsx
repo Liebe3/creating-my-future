@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShopContextProvider";
 import style from "./products.module.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const Product = (props) => {
   const { id, productName, price, productImage } = props.data;
