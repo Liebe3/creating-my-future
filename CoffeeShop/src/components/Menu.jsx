@@ -1,4 +1,6 @@
 import React from "react";
+<link rel="stylesheet" href="coffeestyle.css"></link>
+
 import img1 from "../assets/coffee/coffee1.jpg";
 import img2 from "../assets/coffee/coffee2.jpg";
 import img3 from "../assets/coffee/coffee3.jpg";
