@@ -15,22 +15,16 @@ const MenuList = (props) => {
           </div>
                     
                     <div>
-                        <button>Cold</button>
-                        <button>Hot</button>
+                        <button className="px-3 text-sm border-2 border-[#AB6B2E] bg-[#FFDCAB] 
+                        hover:text-[#AB6B2E] transition-all rounded-lg">Cold</button>
+                        <button className="px-3 text-sm border-2 border-[#AB6B2E] bg-[#FFDCAB] 
+                        hover:text-[#AB6B2E] transition-all rounded-lg">Hot</button>
                     </div>
-                <span>
+                <span className=" flex items-center bg-[#FFDCAB] px-3 py-2 rounded-full cursor-pointer">
                     <FaShoppingCart size={20}/>
                 </span>
-                
-                
-         
-        
-                </div>
+              </div>
             </div>
-            
-        
-            
-    
         </div>
-    )
-    }
+    );
+    };
