@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CiCircleRemove } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -11,31 +11,66 @@ import style from "./navbar.module.css";
 
 const Navbar = () => {
   const { getTotalCart } = useContext(ShopContext);
-  const cartTotal = getTotalCart()
-  const navigate = useNavigate()
+  const cartTotal = getTotalCart();
+  const navigate = useNavigate();
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    document.body.classList.add("no-scroll");
+    setIsMenuOpen(true);
+    console.log("open");
+  };
+
+  const closeMenu = () => {
+    document.body.classList.remove("no-scroll");
+    setIsMenuOpen(false);
+    console.log("close");
+  };
+
+  const handleScreenWidth = () => {
+    if (window.innerWidth < 800) {
+      setIsMenuOpen(false);
+    } else {
+      setIsMenuOpen(true);
+    }
+  };
+
+  useEffect(() => {
+    handleScreenWidth();
+    window.addEventListener("resize", handleScreenWidth);
+
+    return () => {
+      window.removeEventListener("resize", handleScreenWidth);
+    };
+  }, []);
+
   return (
     <nav>
-      <div className={style.logo}>
+      <div className={style.logo} id="logo">
         <h4>LOGO</h4>
       </div>
-      <div className={style["nav-links"]}>
+      <div
+        className={`${style["nav-links"]} ${isMenuOpen ? style.open : ""}`}
+        id="nav-links"
+      >
         <ul className={style.mainMenu}>
           <li>
-            <Link to="/">HOME</Link>
+            <Link to="/" onClick={closeMenu}>HOME</Link>
           </li>
           <li>
-            <Link to="/Products">PRODUCTS</Link>
+            <Link to="/Products" onClick={closeMenu}>PRODUCTS</Link>
           </li>
           <li>
-            <Link to="/About">ABOUT</Link>
+            <Link to="/About" onClick={closeMenu}>ABOUT</Link>
           </li>
           <li>
-            <Link to="/Contact">CONTACT US</Link>
+            <Link to="/Contact" onClick={closeMenu}>CONTACT US</Link>
           </li>
         </ul>
-        <CiCircleRemove className={style["fa-xmark"]} />
+        <CiCircleRemove className={style["fa-xmark"]} onClick={closeMenu} />
       </div>
-      <GiHamburgerMenu className={style["fa-bars"]} />
+      <GiHamburgerMenu className={style["fa-bars"]} onClick={openMenu} />
       <div className={style.search}>
         <div className={style["search-container"]}>
           <input
@@ -51,7 +86,12 @@ const Navbar = () => {
           <Link to="/Cart" className={style["your-link-class"]}>
             <IoCartOutline className={style["fa-cart-shopping"]} size={40} />
           </Link>
-          <div onClick={() => navigate("/Cart")} className={style["add-to-cart"]}>{cartTotal}</div>
+          <div
+            onClick={() => navigate("/Cart")}
+            className={style["add-to-cart"]}
+          >
+            {cartTotal}
+          </div>
         </div>
       </div>
     </nav>
