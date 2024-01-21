@@ -100,7 +100,7 @@ const Shop = () => {
 
       <Slider  className={style.slider} {...settings}>
         {PRODUCTS.map((product) => (
-          <Product data = {product} />
+          <Product key={product.id} data = {product} />
         ))}
       </Slider>
     </div>
