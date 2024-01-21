@@ -1,9 +1,9 @@
 import React from "react";
-import img1 from "../assets/img/menu1.jpg";
-import img2 from "../assets/img/menu2.jpg";
-import img3 from "../assets/img/menu3.jpg";
-import img4 from "../assets/img/menu4.jpg";
-import img5 from "../assets/img/menu5.jpg";
+import img1 from "../assets/coffee/coffee1.jpg";
+import img2 from "../assets/coffee/coffee2.jpg";
+import img3 from "../assets/coffee/coffee3.jpg";
+import img4 from "../assets/coffee/coffee4.jpg";
+import img5 from "../assets/coffee/coffee5.jpg";
 import MenuList from "../components/MenuList";
 
 const Menu = () => {
