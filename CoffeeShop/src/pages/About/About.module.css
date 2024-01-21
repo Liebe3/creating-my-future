@@ -1,3 +1,17 @@
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .section {
   height: 100vh;
   width: 100%;
@@ -11,12 +25,8 @@
   color: #483434;
 }
 
-.clock-container h1 {
-  text-shadow: 2px 2px rgb(171, 150, 154);
-  font-size: 40px;
-}
-
 .clock-container {
+  position: relative;
   height: 50%;
   width: 60%;
   display: flex;
@@ -25,20 +35,44 @@
   justify-content: center;
   background-color: rgba(72, 52, 52, 0.2);
   border-radius: 5px;
+  transition: transform 2s, opacity 2s; 
+  transform-origin: center;
   transition: all 2s 0.1s;
   transform: scale(0);
   opacity: 0;
+  animation: zoomIn s ease-out;
 }
 
-.clock-show {
+.rectangularBox {
+  position: absolute;
+  top: -0.5in; 
+  left: -0.5in; 
+  width: calc(100% + 1in);
+  height: calc(100% + 1in); 
+  background-color: #fff; 
+  opacity: 0.5; 
+  transition: transform 2s; 
+  transform-origin: center;
+  z-index: -1;
+}
+
+.clock-container h1 {
+  text-shadow: 2px 2px rgb(171, 150, 154);
+  font-size: 40px;
+  margin-top: 0.5in; 
+}
+
+
+.clockShow {
   transform: scale(1);
   opacity: 1;
   transition: all 2s 0.1s;
 }
 
 #clock {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
+  margin-top: 0.5in; 
 }
 
 @media screen and (max-width: 600px) {
