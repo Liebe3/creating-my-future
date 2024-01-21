@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaShoppingCart } from "react-icons/fa";
+<link rel="stylesheet" href="coffeestyle.css"></link>
 
 const MenuList = (props) => {
     return (
@@ -10,8 +11,8 @@ const MenuList = (props) => {
         </div>
         <div className=" p-2 mt-5">
           <div className=" flex flex-row justify-between">
-            <h3 className=" font-semibold text-xl">{props.title}</h3>
-            <h3 className=" font-semibold text-xl">{props.value}</h3>
+            <h3 className>{props.title}</h3>
+            <h3 className>{props.value}</h3>
           </div>
                     
                     <div>
@@ -27,7 +28,7 @@ const MenuList = (props) => {
             </div>
           
 
-          
+
      );
     };
 
