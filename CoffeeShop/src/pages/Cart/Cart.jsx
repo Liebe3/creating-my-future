@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Cart = () => {
   const { cartItems, getTotalAmount } = useContext(ShopContext);
   const totalAmount = getTotalAmount();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className={style.cart}>
       <div className={style["cart-section"]}>
@@ -17,14 +17,20 @@ const Cart = () => {
       <div className={style["cart-items"]}>
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} />;
+            return <CartItem key={product.id} data={product} />;
           }
         })}
       </div>
       <div className={style.checkout}>
-        <p>Subtotal: {totalAmount}</p>
-        <button onClick={() => navigate("/Products")}>Continue Shopping</button>
-        <button>Checkout</button>
+        <p className={style.total}>
+          <b> Subtotal: ₱ {totalAmount}</b>
+        </p>
+        <div className={style.buttons}>
+          <button onClick={() => navigate("/Products")}>
+            Continue Ordering
+          </button>
+          <button>Checkout</button>
+        </div>
       </div>
     </div>
   );

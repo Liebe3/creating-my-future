@@ -11,7 +11,7 @@ body{
   background: #fff3e4;
 }
 
-section {
+.section {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -151,7 +151,7 @@ textarea {
   }
 }
 @media screen and (max-width: 470px) {
-  section {
+  .section {
     text-align: center;
   }
 
@@ -186,7 +186,7 @@ textarea {
   align-items: center;
 }
 
-.icons1 a {
+.icons1 .link {
   height: 40px;
   width: 40px;
   font-size: 20px;
@@ -200,6 +200,10 @@ textarea {
   cursor: pointer;
   text-decoration: none;
   color: #483434;
+}
+
+.icons1 .link:hover{
+  background: #B85C38
 }
 
 .ownership1 {

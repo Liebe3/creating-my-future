@@ -10,18 +10,20 @@ const CartItem = (props) => {
     useContext(ShopContext);
   return (
     <div className={style.cartItem}>
-      <img
-        className={style["cart-image"]}
-        src={productImage}
-        alt={productName}
-      />
+      <div className={style["cart-image-container"]}>
+        <img
+          className={style["cart-image"]}
+          src={productImage}
+          alt={productName}
+        />
+      </div>
       <div className={style.description}>
         <p>
           <b>{productName}</b>
         </p>
-        <p> ₱ {price} </p>
+        <p>₱{price}</p>
         <div className="countHandler">
-          <button onClick={() => removeFromCart(id)}>
+          <button className={style.minus} onClick={() => removeFromCart(id)}>
             <FaMinus />
           </button>
           <input
@@ -29,7 +31,7 @@ const CartItem = (props) => {
             value={cartItems[id]}
             onChange={(e) => UpdateCartItems(Number(e.target.value), id)}
           />
-          <button onClick={() => addToCart(id)}>
+          <button className={style.plus} onClick={() => addToCart(id)}>
             <FaPlus />
           </button>
         </div>

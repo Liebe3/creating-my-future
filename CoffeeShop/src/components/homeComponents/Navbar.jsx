@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CiCircleRemove } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CiSearch } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
+import { ShopContext } from "../../context/ShopContextProvider";
+import { useNavigate } from "react-router-dom";
 
 import style from "./navbar.module.css";
 
 const Navbar = () => {
+  const { getTotalCart } = useContext(ShopContext);
+  const cartTotal = getTotalCart()
+  const navigate = useNavigate()
   return (
     <nav>
       <div className={style.logo}>
@@ -43,10 +48,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className={style["fa-cart-shopping-container"]}>
-          <Link to="/Cart" className={style["your-link-class"]} >
+          <Link to="/Cart" className={style["your-link-class"]}>
             <IoCartOutline className={style["fa-cart-shopping"]} size={40} />
           </Link>
-          <div className={style["add-to-cart"]}>0</div>
+          <div onClick={() => navigate("/Cart")} className={style["add-to-cart"]}>{cartTotal}</div>
         </div>
       </div>
     </nav>

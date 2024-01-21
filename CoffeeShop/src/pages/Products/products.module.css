@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.product{
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .coffee {
   background: #b85c38;
@@ -11,12 +20,7 @@
   color: #fff3e4;
 }
 
-.main {
-  height: 100vh;
-  width: 100%;
-  background: #fff3e4;
-  position: relative;
-}
+
 
 .slider {
   height: 60%;
@@ -61,7 +65,8 @@
 }
 
 .order-buttons button{
-  width: 30%;
+  width: 100%;
+  padding: 10px 10px;
   height: 80%;
   font-size:15px;
   border-width:1px;
@@ -90,24 +95,24 @@
 
 @media screen and (max-width:1050px) {
   .order-buttons button{
-    width: 40%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width:800px) {
   .order-buttons button{
-    width: 60%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width:500px) {
   .order-buttons button{
-    width: 30%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width:350px) {
   .order-buttons button{
-    width: 40%;
+    width: 100%;
   }
 }
