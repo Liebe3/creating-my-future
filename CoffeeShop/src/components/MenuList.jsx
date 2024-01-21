@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 
 const MenuList = (props) => {
@@ -25,6 +25,8 @@ const MenuList = (props) => {
                 </span>
               </div>
             </div>
-        </div>
-    );
+          
+     );
     };
+
+export default MenuList;
